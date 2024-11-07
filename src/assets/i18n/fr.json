@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "master": "Maître",
+    "homepage": "Page d'Accueil",
+    "settingsconfiguration": "Paramètres/Configuration",
+    "profileview": "Vue de Profil",
+    "creditrequestissue": "Problème de Demande de Crédit",
+    "studentlist": "Liste des Étudiants",
+    "demoeditgrid": "Modifier le Grille Démo",
+    "main": "PRINCIPAL",
+    "dashboard": "Tableau de Bord",
+    "sales": "Ventes",
+    "ecommerce": "E-commerce",
+    "crypto": "Crypto",
+    "analytics": "Analytique",
+    "crm": "CRM"
+  },
+  "footer": {
+    "copyright": "Droits d'Auteur",
+    "companyname": "CargoFlash",
+    "allrights": "Tous droits réservés."
+  },
+  "header": {
+    "studentgridheader": "Résumé des Étudiants",
+    "studentheader": "Maître des Étudiants"
+  },
+  "studentgridcolumns": {
+    "firstname": "Prénom",
+    "lastname": "Nom de Famille",
+    "gender": "Genre",
+    "email": "Adresse E-mail",
+    "address": "Adresse",
+    "dateofbirth": "Date de Naissance",
+    "isactive": "Actif"
+  },
+  "studentformlabel": {
+    "firstname": "Prénom",
+    "lastname": "Nom de Famille",
+    "gender": "Genre",
+    "email": "Adresse E-mail",
+    "address": "Adresse",
+    "country": "Pays",
+    "city": "Ville",
+    "branch": "Succursale",
+    "dateofbirth": "Date de Naissance",
+    "isactive": "Actif"
+  },
+  "general": {
+    "submit": "Soumettre",
+    "add": "Ajouter",
+    "edit": "Éditer",
+    "view": "Voir",
+    "goback": "Retourner",
+    "Action": "Actions",
+    "createnew": "Créer Nouveau",
+    "saveandclose": "Enregistrer et Fermer",
+    "saveandnew": "Enregistrer et Nouveau"
+  },
+  "placeholders": {
+    "entertext": "Entrez du texte",
+    "selectitem": "Sélectionner un Élément"
+  },
+  "validations": {
+    "required": "Ce champ est requis"
+  },
+  "apiresponse": {
+    "success": "Ajouté avec Succès",
+    "error": "Erreur",
+    "warning": "Veuillez entrer le champ obligatoire!"
+  }
+}

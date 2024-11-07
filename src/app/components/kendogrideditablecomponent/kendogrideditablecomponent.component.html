@@ -1,0 +1,42 @@
+<octo-tab [tabs]="tabItems" (tabSelected)="onTabSelected($event)"></octo-tab>
+<ng-template #content1>
+  <h5>Time Picker</h5>
+  <octo-timpicker [(value)]="selectedTime" [format]="'HH:mm'"></octo-timpicker>
+  <p>Selected Time: {{ selectedTime | date: timeFormat }}</p>
+  <h5>Date Range</h5>
+  <octo-daterangepicker [(ngModel)]="selectedDateRange" name="dateRange"></octo-daterangepicker>
+  <div>
+    <p>Start Date: {{ selectedDateRange[0] | date:'shortDate' }}</p>
+    <p>End Date: {{ selectedDateRange[1] | date:'shortDate' }}</p>
+  </div>
+  <h5>Icon</h5>
+  <octo-icon></octo-icon>
+  <h5>Confirm Dialog</h5>
+  <octo-button (click)="showConfirm()" text="Confirm"></octo-button>
+  <h5> Dialog</h5>
+  <octo-button (click)="openDialog()" text="HTML Dialog"></octo-button>
+  <ng-template #dialogTemplate>
+    <h5>Dialog Content</h5>
+    <h5>Custom HTML for Tab 2</h5>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <octo-button (click)="closeDialog()" text="Close"></octo-button>
+
+
+  </ng-template>
+
+  <h5> Notify</h5>
+  <octo-button (click)="notify()" text="Success"></octo-button>
+</ng-template>
+
+<ng-template #content2>
+  <h5>Custom HTML for Tab 2</h5>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</ng-template>

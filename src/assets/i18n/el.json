@@ -1,0 +1,66 @@
+{
+  "menu": {
+    "master": "Μάστερ",
+    "homepage": "Αρχική Σελίδα",
+    "settingsconfiguration": "Ρυθμίσεις/Διαμόρφωση",
+    "profileview": "Προβολή Προφίλ",
+    "creditrequestissue": "Πρόβλημα με το Αίτημα Πίστης",
+    "studentlist": "Λίστα Φοιτητών",
+    "demoeditgrid": "Δημοσίευση Επεξεργασίας",
+    "main": "ΚΥΡΙΟΣ",
+    "dashboard": "Πίνακας Ελέγχου",
+    "sales": "Πωλήσεις",
+    "ecommerce": "Ηλεκτρονικό Εμπόριο",
+    "crypto": "Κρυπτο",
+    "analytics": "Ανάλυση",
+    "crm": "CRM"
+  },
+  "header": {
+    "studentgridheader": "Σύνοψη Φοιτητών",
+    "studentheader": "Μάστερ Φοιτητών"
+  },
+  "studentgridcolumns": {
+    "firstname": "Όνομα",
+    "lastname": "Επώνυμο",
+    "gender": "Φύλο",
+    "email": "Διεύθυνση Ηλεκτρονικού Ταχυδρομείου",
+    "address": "Διεύθυνση",
+    "dateofbirth": "Ημερομηνία Γέννησης",
+    "isactive": "Ενεργό"
+  },
+  "studentformlabel": {
+    "firstname": "Όνομα",
+    "lastname": "Επώνυμο",
+    "gender": "Φύλο",
+    "email": "Διεύθυνση Ηλεκτρονικού Ταχυδρομείου",
+    "address": "Διεύθυνση",
+    "country": "Χώρα",
+    "city": "Πόλη",
+    "branch": "Κατάστημα",
+    "dateofbirth": "Ημερομηνία Γέννησης",
+    "isactive": "Ενεργό"
+  },
+  "general": {
+    "submit": "Υποβολή",
+    "add": "Προσθήκη",
+    "edit": "Επεξεργασία",
+    "view": "Προβολή",
+    "goback": "Επιστροφή",
+    "Action": "Ενέργειες",
+    "createnew": "Δημιουργία Νέου",
+    "saveandclose": "Αποθήκευση και Κλείσιμο",
+    "saveandnew": "Αποθήκευση και Νέο"
+  },
+  "placeholders": {
+    "entertext": "Εισάγετε κείμενο",
+    "selectitem": "Επιλέξτε Στοιχείο"
+  },
+  "validations": {
+    "required": "Αυτό το πεδίο είναι υποχρεωτικό"
+  },
+  "apiresponse": {
+    "success": "Προστέθηκε με επιτυχία",
+    "error": "Σφάλμα",
+    "warning": "Παρακαλώ συμπληρώστε το υποχρεωτικό πεδίο!"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "menu": {
+    "master": "Meister",
+    "homepage": "Startseite",
+    "settingsconfiguration": "Einstellungen",
+    "profileview": "Profilansicht",
+    "creditrequestissue": "Problem mit Kredit Anfrage",
+    "studentlist": "Studentenliste",
+    "demoeditgrid": "Demonstration Bearbeiten",
+    "main": "HAUPT",
+    "dashboard": "Dashboard",
+    "sales": "Verkäufe",
+    "ecommerce": "E-Commerce",
+    "crypto": "Krypto",
+    "analytics": "Analytik",
+    "crm": "CRM"
+  },
+  "header": {
+    "studentgridheader": "Studentenübersicht",
+    "studentheader": "Studentenmeister"
+  },
+  "studentgridcolumns": {
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "gender": "Geschlecht",
+    "email": "E-Mail Adresse",
+    "address": "Adresse",
+    "dateofbirth": "Geburtsdatum",
+    "isactive": "Aktiv"
+  },
+  "studentformlabel": {
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "gender": "Geschlecht",
+    "email": "E-Mail Adresse",
+    "address": "Adresse",
+    "country": "Land",
+    "city": "Stadt",
+    "branch": "Filiale",
+    "dateofbirth": "Geburtsdatum",
+    "isactive": "Aktiv"
+  },
+  "general": {
+    "submit": "Einreichen",
+    "add": "Hinzufügen",
+    "edit": "Bearbeiten",
+    "view": "Anzeigen",
+    "goback": "Zurückgehen",
+    "Action": "Aktionen",
+    "createnew": "Neu Erstellen",
+    "saveandclose": "Speichern und Schließen",
+    "saveandnew": "Speichern und Neu"
+  },
+  "placeholders": {
+    "entertext": "Text eingeben",
+    "selectitem": "Element auswählen"
+  },
+  "validations": {
+    "required": "Dieses Feld ist erforderlich"
+  },
+  "apiresponse": {
+    "success": "Erfolgreich hinzugefügt",
+    "error": "Fehler",
+    "warning": "Bitte das Pflichtfeld ausfüllen!"
+  }
+}

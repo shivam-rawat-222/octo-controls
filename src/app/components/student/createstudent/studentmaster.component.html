@@ -1,0 +1,162 @@
+
+<div class="card-header px-0">
+  <div class="d-flex justify-content-between w-100">
+    <h3 class="card-title d-flex align-items-center">{{'header.studentheader'|translate}}</h3>
+    <div class="btn-list">
+      <a routerLink="/studentgrid" class="btn btn-outline-danger p-1 px-4">{{'general.goback'|translate}}</a>
+    </div>
+  </div>
+
+</div>
+<div class="mt-5 p-2 rounded">
+  <div class="card p-5 ">
+    <div class="row all-fields">
+      <div class="row">
+      <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.firstname'|translate" [required]="required"></octo-label>
+          <octo-input  [(ngModel)]="student.firstName" [required]="required"    [requiredmessage]="'validations.required'|translate"
+                       [placeholder]="'placeholders.entertext'|translate"
+                       [disabled]="view"
+                       [minLength]="4"
+                       [decimalPoint]="3"
+                       [maxLength]="100"
+                       [validationType]="inputValidationType">
+          </octo-input>
+        </div>
+ 
+      <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.lastname'|translate" [required]="required"></octo-label>
+          <octo-input [(ngModel)]="student.lastName" [required]="required"
+                       [disabled]="view"
+                         [requiredmessage]="'validations.required'|translate"
+                       [placeholder]="'placeholders.entertext'|translate"
+                     >
+          </octo-input>
+      </div></div>
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.email'|translate" [required]="required"></octo-label>
+          <octo-input [(ngModel)]="student.emailAddress" [required]="required"    [requiredmessage]="'validations.required'|translate"
+                       [disabled]="view"
+                        [placeholder]="'placeholders.entertext'|translate"
+                      >
+          </octo-input>
+        </div>
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.address'|translate" [required]="required"></octo-label>
+          <octo-textarea [(ngModel)]="student.address" [required]="required"       [requiredmessage]="'validations.required'|translate"
+                          [disabled]="view"
+                            [placeholder]="'placeholders.entertext'|translate"
+                          [rows]="1"
+                          [cols]="50">
+          </octo-textarea>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.country'|translate" [required]="required"      [requiredmessage]="'validations.required'|translate"></octo-label>
+          <octo-select [(ngModel)]="student.countryId"
+                        [disabled]="view"
+                        [data]="country"
+                        valueField="value"
+                        textField="name"
+                        [placeholder]="'placeholders.selectitem'|translate"
+                        [filterable]="true"
+                        [required]="required"
+                        (valueChange)="onCountryValueChange($event)">
+          </octo-select>
+        </div>
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.city'|translate" [required]="required" ></octo-label>
+          <octo-select [(ngModel)]="student.cityId"
+                        [disabled]="view"
+                        [data]="cityList"
+                        valueField="value"
+                        textField="name"
+                        [required]="required"
+                            [requiredmessage]="'validations.required'|translate"
+                           [placeholder]="'placeholders.selectitem'|translate"
+                        [filterable]="true">
+          </octo-select>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.branch'|translate" [required]="required"></octo-label>
+
+          <octo-multiselect [(ngModel)]="student.branch"
+                             [disabled]="view"
+                             [data]="branchlist"
+                             [valueField]="'value'"
+                             [textField]="'name'"
+                             [required]="required"
+                             [requiredmessage]="'validations.required'|translate"
+                              [placeholder]="'placeholders.selectitem'|translate">
+          </octo-multiselect>
+        </div>
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.dateofbirth'|translate" [required]="required"></octo-label>
+          <octo-datepicker [disabled]="view"  [required]="required"      [requiredmessage]="'validations.required'|translate" [(ngModel)]="student.dateofbirth" [format]="format" [placeholder]="'MM/dd/yyyy'" [min]="min"
+                            [max]="max"
+                           >
+
+          </octo-datepicker>
+    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.gender'|translate" [required]="required"></octo-label>
+          <octo-radio-button [(ngModel)]="student.gender"
+                              [id]="'lblmale'"
+                              [disabled]="view"
+                              [required]="required"
+                              [requiredmessage]="'validations.required'|translate"
+                              [listdata]="listdata">
+          </octo-radio-button>
+
+        </div>
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.isactive'|translate"></octo-label>
+          <octo-checkbox [(ngModel)]="student.isActive" [disabled]="view" 
+                          [checked]="false">
+          </octo-checkbox>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'Switch'" [required]="required"></octo-label>
+   
+          <octo-toggle
+          [(ngModel)]="student.toogle"
+  [checked]="isChecked"
+
+  
+  (valueChange)="onToggleChange($event)"
+>
+</octo-toggle>
+
+        </div>
+        <div class="col-md-4 mb-1">
+          <octo-label [labelName]="'studentformlabel.card'|translate"></octo-label>
+          <octo-card title="Card Title" subtitle="Card Subtitle" imageSrc="/assets/images/flags/india_flag.jpg" bodyContent="This is the main content of the card." footerContent="Footer content goes here."
+  [hasFooter]="true"></octo-card>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="mt-4">
+          <octo-save-button (click)="cancel($event)" [disabled]="view"></octo-save-button>
+          <octo-save-new-button (click)="cancel($event)" [disabled]="view"></octo-save-new-button>
+          <octo-cancel-button (click)="cancel($event)" [disabled]="view"></octo-cancel-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "master": "Мастер",
+    "homepage": "Главная Страница",
+    "settingsconfiguration": "Настройки/Конфигурация",
+    "profileview": "Просмотр Профиля",
+    "creditrequestissue": "Проблема Запроса Кредита",
+    "studentlist": "Список Студентов",
+    "demoeditgrid": "Редактирование Демонстрационной Таблицы",
+    "main": "ОСНОВНОЙ",
+    "dashboard": "Панель Управления",
+    "sales": "Продажи",
+    "ecommerce": "Электронная Коммерция",
+    "crypto": "Крипто",
+    "analytics": "Аналитика",
+    "crm": "CRM"
+  },
+  "footer": {
+    "copyright": "Авторские Права",
+    "companyname": "CargoFlash",
+    "allrights": "Все права защищены."
+  },
+  "header": {
+    "studentgridheader": "Сводка Студентов",
+    "studentheader": "Мастер Студентов"
+  },
+  "studentgridcolumns": {
+    "firstname": "Имя",
+    "lastname": "Фамилия",
+    "gender": "Пол",
+    "email": "Адрес Электронной Почты",
+    "address": "Адрес",
+    "dateofbirth": "Дата Рождения",
+    "isactive": "Активный"
+  },
+  "studentformlabel": {
+    "firstname": "Имя",
+    "lastname": "Фамилия",
+    "gender": "Пол",
+    "email": "Адрес Электронной Почты",
+    "address": "Адрес",
+    "country": "Страна",
+    "city": "Город",
+    "branch": "Филиал",
+    "dateofbirth": "Дата Рождения",
+    "isactive": "Активный"
+  },
+  "general": {
+    "submit": "Отправить",
+    "add": "Добавить",
+    "edit": "Редактировать",
+    "view": "Просмотреть",
+    "goback": "Вернуться",
+    "Action": "Действия",
+    "createnew": "Создать Новый",
+    "saveandclose": "Сохранить и Закрыть",
+    "saveandnew": "Сохранить и Новый"
+  },
+  "placeholders": {
+    "entertext": "Введите текст",
+    "selectitem": "Выберите Элемент"
+  },
+  "validations": {
+    "required": "Это поле обязательно"
+  },
+  "apiresponse": {
+    "success": "Успешно Добавлено",
+    "error": "Ошибка",
+    "warning": "Пожалуйста, заполните обязательное поле!"
+  }
+}

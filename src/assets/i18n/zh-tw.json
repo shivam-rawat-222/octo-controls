@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "master": "主控",
+    "homepage": "主頁",
+    "settingsconfiguration": "設定/配置",
+    "profileview": "個人資料查看",
+    "creditrequestissue": "信用請求問題",
+    "studentlist": "學生名單",
+    "demoeditgrid": "演示編輯網格",
+    "main": "主",
+    "dashboard": "儀表板",
+    "sales": "銷售",
+    "ecommerce": "電子商務",
+    "crypto": "加密貨幣",
+    "analytics": "分析",
+    "crm": "客戶關係管理"
+  },
+  "footer": {
+    "copyright": "版權",
+    "companyname": "CargoFlash",
+    "allrights": "版權所有。"
+  },
+  "header": {
+    "studentgridheader": "學生摘要",
+    "studentheader": "學生主控"
+  },
+  "studentgridcolumns": {
+    "firstname": "名",
+    "lastname": "姓",
+    "gender": "性別",
+    "email": "電子郵件地址",
+    "address": "地址",
+    "dateofbirth": "出生日期",
+    "isactive": "活躍"
+  },
+  "studentformlabel": {
+    "firstname": "名",
+    "lastname": "姓",
+    "gender": "性別",
+    "email": "電子郵件地址",
+    "address": "地址",
+    "country": "國家",
+    "city": "城市",
+    "branch": "分支",
+    "dateofbirth": "出生日期",
+    "isactive": "活躍"
+  },
+  "general": {
+    "submit": "提交",
+    "add": "添加",
+    "edit": "編輯",
+    "view": "查看",
+    "goback": "返回",
+    "Action": "操作",
+    "createnew": "創建新",
+    "saveandclose": "保存並關閉",
+    "saveandnew": "保存並新建"
+  },
+  "placeholders": {
+    "entertext": "輸入文本",
+    "selectitem": "選擇項目"
+  },
+  "validations": {
+    "required": "此字段為必填"
+  },
+  "apiresponse": {
+    "success": "成功添加",
+    "error": "錯誤",
+    "warning": "請填寫必填字段！"
+  }
+}

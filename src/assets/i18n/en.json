@@ -1,0 +1,74 @@
+{
+  "menu": {
+    "master": "Master",
+    "homepage": "Homepage",
+    "settingsconfiguration": "Settings/Configuration",
+    "profileview": "Profile-View",
+    "creditrequestissue": "Credit Request Issue",
+    "studentlist": "Student List",
+    "demoeditgrid": "Demo Edit Grid",
+    "demoeothercontrols": "Demo Other Controls",
+    "main": "MAIN",
+    "dashboard": "Dashboard",
+    "sales": "Sales",
+    "ecommerce": "Ecommerce",
+    "crypto": "Crypto",
+    "analytics": "Analytics",
+    "crm": "CRM"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "companyname": "CargoFlash",
+    "allrights": "All rights reserved."
+  },
+  "header": {
+    "studentgridheader": "Student Summary",
+    "studentheader": "Student Master"
+  },
+  "studentgridcolumns": {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "gender": "Gender",
+    "email": "Email Address",
+    "address": "Address",
+    "dateofbirth": "Date Of Birth",
+    "isactive": "Active"
+  },
+  "studentformlabel": {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "gender": "Gender",
+    "email": "Email Address",
+    "address": "Address",
+    "country": "Country",
+    "city": "City",
+    "branch": "Branch",
+    "card": "Card",
+    "toogle": "Toogle",
+    "dateofbirth": "Date Of Birth",
+    "isactive": "Active"
+  },
+  "general": {
+    "submit": "Submit",
+    "add": "Add",
+    "edit": "Edit",
+    "view": "View",
+    "goback": "Go Back",
+    "Action": "Actions",
+    "createnew": "Create New",
+    "saveandclose": "Save and Close",
+    "saveandnew": "Save and New"
+  },
+  "placeholders": {
+    "entertext": "Enter text",
+    "selectitem": "Select Item"
+  },
+  "validations": {
+    "required": "This field is required"
+  },
+  "apiresponse": {
+    "success": "Added Successfully",
+    "error": "Error",
+    "warning": "Please input mandatory field!"
+  }
+}

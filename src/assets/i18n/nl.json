@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "master": "Master",
+    "homepage": "Startpagina",
+    "settingsconfiguration": "Instellingen/Configuratie",
+    "profileview": "Profielweergave",
+    "creditrequestissue": "Probleem met Kredietaanvraag",
+    "studentlist": "Studentenlijst",
+    "demoeditgrid": "Demonstratie Bewerken",
+    "main": "HOofD",
+    "dashboard": "Dashboard",
+    "sales": "Verkopen",
+    "ecommerce": "E-commerce",
+    "crypto": "Crypto",
+    "analytics": "Analyses",
+    "crm": "CRM"
+  },
+  "footer": {
+    "copyright": "Auteursrecht",
+    "companyname": "CargoFlash",
+    "allrights": "Alle rechten voorbehouden."
+  },
+  "header": {
+    "studentgridheader": "Studentenoverzicht",
+    "studentheader": "Student Master"
+  },
+  "studentgridcolumns": {
+    "firstname": "Voornaam",
+    "lastname": "Achternaam",
+    "gender": "Geslacht",
+    "email": "E-mailadres",
+    "address": "Adres",
+    "dateofbirth": "Geboortedatum",
+    "isactive": "Actief"
+  },
+  "studentformlabel": {
+    "firstname": "Voornaam",
+    "lastname": "Achternaam",
+    "gender": "Geslacht",
+    "email": "E-mailadres",
+    "address": "Adres",
+    "country": "Land",
+    "city": "Stad",
+    "branch": "Vestiging",
+    "dateofbirth": "Geboortedatum",
+    "isactive": "Actief"
+  },
+  "general": {
+    "submit": "Indienen",
+    "add": "Toevoegen",
+    "edit": "Bewerken",
+    "view": "Bekijken",
+    "goback": "Teruggaan",
+    "Action": "Acties",
+    "createnew": "Nieuwe Aanmaken",
+    "saveandclose": "Opslaan en Sluiten",
+    "saveandnew": "Opslaan en Nieuw"
+  },
+  "placeholders": {
+    "entertext": "Voer tekst in",
+    "selectitem": "Selecteer Item"
+  },
+  "validations": {
+    "required": "Dit veld is verplicht"
+  },
+  "apiresponse": {
+    "success": "Succesvol Toegevoegd",
+    "error": "Fout",
+    "warning": "Voer verplicht veld in!"
+  }
+}

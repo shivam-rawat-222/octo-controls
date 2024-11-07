@@ -1,0 +1,699 @@
+ /* added by Nitin kaushik */
+ /* You can add global styles to this file, and also import other style files */
+
+ /* for complete application bacground color(code start) */
+ body {
+     background-color: #EEF0F4;
+ }
+
+ /* for complete application bacground color(code end) */
+
+ /* custom color for complete application, 'common colors', (code start) */
+ .darkpurple {
+     color: #682863 !important;
+ }
+
+ .darkgrey {
+     color: #3C3B3C !important;
+ }
+
+ .darkblue {
+     color: #0D99FF !important;
+ }
+
+ .bg-darkpurple {
+     background-color: #682863 !important;
+ }
+
+ .lightgrey {
+     background-color: rgba(203, 204, 198, 0.32) !important;
+ }
+
+ .text-grey-color {
+     color: rgba(11, 10, 11, 0.6);
+ }
+
+ .btn-color {
+     background: #3D6D9C !important;
+ }
+
+ .bg-danger-btn {
+     background: #ffd8d8 !important;
+ }
+
+ .bg-darkpurple-light{
+   background-color: #cdb2cb;
+ }
+
+ .text-orange {
+     color: #FF8D00 !important;
+ }
+
+ .text-dark-grey {
+     color: #9e9e9e;
+ }
+
+ .text-grey-light {
+     color: #d3d3d3 !important;
+ }
+
+ .bg-light-blue {
+     background-color: #DEE5ED !important;
+ }
+
+ .text-light-blue {
+     color: #3D6D9C !important;
+ }
+
+ .bg-light-purple {
+     background-color: #ffe2fd;
+ }
+
+ .bg-purple-light-btn {
+     background-color: rgba(104, 40, 99, 0.17) !important;
+ }
+
+ .bg-green-light {
+     background-color: rgb(214, 255, 214) !important;
+ }
+
+ .border-color-blue {
+     border: solid 1px #3D6D9C !important;
+ }
+
+ /* for underline color */
+ .underline-darkpurple {
+     color: #682863;
+ }
+
+ /* custom color for complete application, 'common colors', (code end) */
+
+ /* modal custom classes for right align or full width height(code start) */
+ .modal-full-height {
+     margin: 0;
+     display: flex;
+ }
+
+ .modal-full-height1 {
+     height: -webkit-fill-available;
+     margin: 0;
+     display: flex
+ }
+
+ .modal-dialog-end {
+     margin-left: auto;
+ }
+
+ @media only screen and (max-width: 768px) {
+     .modal-full-height {
+         margin: 0;
+         display: flex
+     }
+ }
+
+ /* modal custom classes for right align or full width height(code end) */
+
+ /* for tabs css for complete application(code start) */
+ .tab-content-setting {
+     display: none;
+     /* Hide all tab content by default */
+ }
+
+ .tab-content-setting.active {
+     display: block;
+     /* Show active tab content */
+ }
+
+ /* for tabs css for complete application(code end) */
+
+ /* for font-sizes */
+ .font-size-12 {
+     font-size: 12px;
+ }
+
+ /* for font-sizes */
+ .font-size-10 {
+     font-size: 11px !important;
+ }
+
+ .btn-height {
+     height: 36px;
+ }
+
+
+ /* for icon 
+ icon size */
+ .icon-size-15 {
+     width: 15px;
+ }
+
+ /* icon size  */
+ .icon-size-10 {
+     width: 10px;
+ }
+
+ .icon-size-19 {
+     width: 19px;
+ }
+
+ /* for font size */
+ .font-size-12 {
+     font-size: 12px !important;
+ }
+
+ /* for place holder class */
+ .placeholder-color::placeholder {
+     color: #000 !important;
+ }
+
+ /* for margin-top */
+ .m-top-20 {
+     margin-top: 20px !important;
+ }
+
+ /* credit component */
+ .credit-pop-width {
+     display: inline;
+ }
+
+ .icon-width {
+     width: 22px;
+ }
+
+ /* cursor pointer */
+ .cursor-pointer {
+     cursor: pointer;
+ }
+
+ /* Home page tabs */
+ .home-page-tabs {
+     width: 75%;
+ }
+
+ /* spacing in mobile view */
+ .app-content .side-app {
+     padding: 0px !important;
+ }
+
+ .homepage-main {
+     margin-left: -4px !important;
+ }
+
+ /* Home page mobile view */
+ @media only screen and (max-width: 600px) {
+     .home-page-tabs {
+         width: 100%;
+     }
+
+     .homepage-main {
+         text-align: -webkit-center;
+         padding: 0;
+         margin-left: 0px !important;
+     }
+ }
+
+ /* operational system setting */
+ @media only screen and (max-width: 500px) {
+     .font-responsive {
+         font-size: 12px !important;
+     }
+
+     .space-responsive {
+         margin-left: 0px !important;
+         margin-top: 34px !important;
+     }
+ }
+
+ .form-check-input:checked {
+     background: white !important;
+     border: solid 4px #3D6D9C !important;
+ }
+
+ .slider.round {
+     border-radius: 34px;
+ }
+
+ .slider.round:before {
+     border-radius: 50%;
+ }
+
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 50px;
+     height: 25px;
+ }
+
+ .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+ }
+
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(235, 87, 87, 0.2);
+     transition: .4s;
+ }
+
+ .slider:before {
+     position: absolute;
+     content: "";
+     height: 21px;
+     width: 21px;
+     left: 2px;
+     bottom: 2px;
+     background-color: red;
+     transition: .4s;
+ }
+
+ input:checked+.slider {
+     background-color: rgba(61, 156, 70, 0.2);
+ }
+
+ input:checked+.slider:before {
+     background-color: green;
+     /* Change color to green when checked */
+     transform: translateX(26px);
+ }
+
+ /* Rounded sliders */
+
+ /* four level css */
+ .four-level-th-style {
+     background-color: #DEE5ED;
+ }
+
+ .four-level-th-style:first-child {
+     border-radius: 8px 0px 0px 8px;
+ }
+
+ .four-level-th-style:last-child {
+     border-radius: 0px 8px 8px 0px;
+ }
+
+ .four-level-td-style {
+     border-radius: 5px 0px 0px 5px !important;
+ }
+
+
+ tr .four-level-td-style:last-child {
+     border-radius: 0px 5px 5px 5px !important;
+ }
+
+ table {
+     border-collapse: separate;
+     border-spacing: 0 1em;
+ }
+
+ .table-border {
+     border: none !important;
+ }
+
+ .tbody_tr {
+     box-shadow: 0px 2px 4px 0px #c4c4c4 !important;
+ }
+
+ /* delete button */
+ .delete-btn {
+     margin-top: 29px;
+     width: 23px;
+ }
+
+ /*  cross btn modal */
+ .cross-btn-modal {
+     margin-top: -3px;
+ }
+
+ /* four level css */
+
+ /* unprocess primeng custom css */
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table {
+     border-collapse: separate;
+     border-spacing: 0 0.2em;
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-thead .tr-style .td-style {
+     background-color: #DEE5ED;
+     padding: 8px !important;
+     border: solid 1px rgb(203, 204, 198);
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-thead .tr-style .td-style:first-child {
+     border-radius: 5px 0px 0px 5px;
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-thead .tr-style .td-style:last-child {
+     border-radius: 0px 5px 5px 0px;
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .td-style {
+     padding: 8px !important;
+
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .td-style:first-child {
+     border-radius: 5px 0px 0px 5px;
+ }
+
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .td-style:last-child {
+     border-radius: 0px 5px 5px 0px;
+ }
+
+ /* for table body first-child(primeng) */
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .inprogress-border-red:first-child {
+     border-left: solid 1px red;
+ }
+
+ /* for table body last-child(primeng) */
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .inprogress-border-red:last-child {
+     border-right: solid 1px red;
+ }
+
+ /* for table body td(primeng) */
+ .p-element .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-tbody .tr-style .inprogress-border-red {
+     border-top: solid 1px red;
+     border-bottom: solid 1px red;
+ }
+
+ /* for pagination code (code start) */
+ .p-element .p-paginator {
+     background: transparent !important;
+     padding: 0px;
+ }
+
+ .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+     background-color: #682863;
+     color: white;
+     border-radius: 30px;
+ }
+
+ .pagination-botttom {
+     position: absolute;
+     bottom: 70px !important;
+ }
+
+ /* for pagination code (code start) */
+
+ /* Prime ng Cross btn color */
+ .p-element .p-icon-wrapper .p-dialog-header-close-icon {
+     color: rgba(61, 109, 156, 1);
+ }
+
+ /* history page table css */
+ .p-datatable-table .p-datatable-thead .history-table-head-tr .history-table-head-tr-th {
+     background-color: #DEE5ED !important;
+     padding: 8px !important;
+     font-size: 12px;
+ }
+
+ .p-datatable-table .p-datatable-tbody .history-table-body-tr .history-table-body-tr-td {
+     padding: 0px !important;
+     font-size: 12px !important;
+ }
+
+ /* this is for disabled a image */
+ .icon-size-19.disabled {
+     opacity: 0.5;
+     /* Adjust as needed */
+     pointer-events: none;
+     /* Prevent click interactions */
+ }
+
+ /* progress bar css */
+ .progresssbar {
+     height: 140px;
+     margin-top: -43px;
+ }
+
+ .progress-line {
+     background-color: #682863F2;
+     width: 25% !important;
+ }
+
+ .circle-image {
+     margin-left: 0px;
+     margin-top: 0px;
+     width: 12px;
+ }
+
+ .date {
+     top: 34px;
+     left: -29px;
+     position: absolute;
+ }
+
+ .start {
+     margin-left: 0%;
+ }
+
+ .twenty-five {
+     margin-left: 25%;
+ }
+
+ .fivety {
+     margin-left: 50%;
+ }
+
+ .seventy-five {
+     margin-left: 75%;
+ }
+
+ .hundred {
+     margin-left: 100%;
+ }
+
+ .date-hundred {
+     margin-left: 99%;
+ }
+
+
+ .request-created {
+     top: 17px;
+     left: -35px;
+     position: absolute;
+ }
+
+ .credit {
+     top: 9px;
+     left: -38px;
+     position: absolute;
+ }
+
+ .assessed {
+     top: 9px;
+     left: -25px;
+     position: absolute;
+ }
+
+ .approved {
+     top: 9px;
+     left: -26px;
+     position: absolute;
+ }
+
+ .verified {
+     top: 9px;
+     left: -20px;
+     position: absolute;
+ }
+
+ .date-credit {
+     top: 34px;
+     left: -28px;
+     position: absolute;
+ }
+
+ .date-assessed {
+     top: 34px;
+     left: -35px;
+     position: absolute;
+ }
+
+ .date-approved {
+     top: 34px;
+     left: -35px;
+     position: absolute;
+ }
+
+ .date-verified {
+     top: 34px;
+     left: -35px;
+     position: absolute;
+ }
+
+
+ .progress-bar-btn {
+     width: 1.6rem;
+     height: 1.6rem;
+ }
+
+ .progressbar-main {
+     width: 100%
+ }
+
+ .progress-bar-line {
+     height: 1px;
+ }
+
+
+ /*  mobile view progress bar */
+ @media only screen and (max-width: 530px) {
+     .progresssbar {
+         height: 523px;
+         margin-right: 203px;
+         margin-left: -242px;
+         rotate: 90deg;
+         margin-top: auto;
+         padding: 0px !important;
+     }
+
+     .request-created {
+         top: 62px;
+         left: -44px;
+         rotate: -90deg;
+         position: absolute;
+     }
+
+     .assessed {
+         top: 30px;
+         rotate: -90deg;
+         left: -26px;
+         position: absolute;
+     }
+
+     .approved {
+         top: 33px;
+         rotate: -90deg;
+         left: -27px;
+         position: absolute;
+     }
+
+     .verified {
+         top: 28px;
+         rotate: -90deg;
+         left: -21px;
+         position: absolute;
+     }
+
+     .credit {
+         top: 42px;
+         left: -35px;
+         rotate: -90deg;
+         position: absolute;
+     }
+
+
+     .date-request-created {
+         top: 62px;
+         left: -44px;
+         rotate: -90deg;
+         position: absolute;
+     }
+
+     .date-assessed {
+         top: 35px;
+         rotate: -90deg;
+         left: -16px;
+         position: absolute;
+     }
+
+     .date-approved {
+         top: 38px;
+         rotate: -90deg;
+         left: -16px;
+         position: absolute;
+     }
+
+     .date-verified {
+         top: 36px;
+         rotate: -90deg;
+         left: -18px;
+         position: absolute;
+     }
+
+     .date-credit {
+         top: 49px;
+         left: -13px;
+         rotate: -90deg;
+         position: absolute;
+     }
+
+
+     .date {
+         top: 63px;
+         rotate: -90deg;
+         left: -11px;
+         position: absolute;
+     }
+
+     .circle-image {
+         margin-left: 0px;
+         margin-top: -2px;
+         width: 12px;
+         rotate: -90deg;
+     }
+ }
+
+ @media only screen and (max-width : 435px) {
+     .progresssbar {
+         height: 551px;
+         margin-right: 170px;
+         margin-left: -319px;
+         rotate: 90deg;
+         margin-top: auto;
+         padding: 0px !important;
+     }
+ }
+
+ /* account-profile */
+ .image-width-height {
+     width: 34px;
+     height: 34px;
+
+ }
+
+ /* component height */
+ .component-h100 {
+     height: 100%;
+ }
+
+ /* credit issue */
+ .credit-progress-line {
+     background-color: #682863F2;
+     width: 100% !important;
+ }
+
+ .modal-backdrop {
+     display: none;
+     /* Hide by default */
+ }
+
+ .p-element .p-dropdown .p-inputtext {
+     padding: 3px;
+ }
+
+ .modal-popup-width-85 {
+     width: 85%;
+     margin-left: 15%;
+ }
+
+
+/* kendu border circle */
+
+ .rounded-grid {
+    border-radius: 10px;
+    /* Adjust the radius as needed */
+    overflow: hidden;
+    /* Ensures the content is clipped to the rounded corners */
+}
+
+.icon-size{
+    width: 25px; 
+    height: auto
+}

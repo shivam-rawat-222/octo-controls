@@ -1,0 +1,130 @@
+
+<div class="card-header px-0">
+    <div class="d-flex justify-content-between w-100">
+      <h3 class="card-title d-flex align-items-center">{{'header.studentheader'|translate}}</h3>
+      <div class="btn-list">
+        <a routerLink="/studentgrid" class="btn btn-outline-danger p-1 px-4">{{'general.goback'|translate}}</a>
+      </div>
+    </div>
+  
+  </div>
+  <div class="product-summary">
+    <div class="card-body card mb-4">
+      <form [formGroup]="formGroup!">
+        <div class="row">
+          <div class="col-md-4 mb-1">
+  
+            <octo-input [labelName]="'studentformlabel.firstname'|translate" formControlName="firstName" 
+                         placeholder="Enter text"
+                         [disabled]="view"
+                         [minLength]="4"
+                         [maxLength]="100"
+  
+                         [validationType]="inputValidationType"
+                         >
+            </octo-input>
+          </div>
+          <div class="col-md-4 mb-1">
+            <octo-input  formControlName="lastName"
+                         [disabled]="view"
+                         placeholder="Enter text"
+                         [labelName]="'studentformlabel.lastname'|translate">
+            </octo-input>
+  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <octo-input  formControlName="emailAddress"
+                         [disabled]="view"
+                         placeholder="Enter text"
+                         [labelName]="'studentformlabel.email'|translate">
+            </octo-input>
+          </div>
+          <div class="col-md-4 mb-1">
+            <octo-textarea  formControlName="address"
+                            [disabled]="view"
+                            placeholder="Enter text"
+                            [labelName]="'studentformlabel.address'|translate"
+                            [rows]="1"
+                            [cols]="50">
+            </octo-textarea>
+  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <octo-select  formControlName="countryId"
+                          [disabled]="view"
+                          [labelName]="'studentformlabel.country'|translate"
+                          [data]="country"
+                          valueField="value"
+                          textField="name"
+                          placeholder="Select an item"
+                          [filterable]="true"
+                          (valueChange)="onCountryValueChange($event)">
+            </octo-select>
+          </div>
+          <div class="col-md-4 mb-1">
+            <octo-select  formControlName="cityId"
+                          [disabled]="view"
+                          [labelName]="'studentformlabel.city'|translate"
+                          [data]="cityList"
+                          valueField="value"
+                          textField="name"
+                          placeholder="Select City"
+                          [filterable]="true">
+            </octo-select>
+  
+          </div>
+  
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <octo-multiselect  formControlName="branch"
+                               [disabled]="view"
+                               [labelName]="'studentformlabel.branch'|translate"
+                               [data]="branchlist"
+                               [valueField]="'value'"
+                               [textField]="'name'"
+                               placeholder="Select an item"
+                               >
+            </octo-multiselect>
+          </div>
+          <div class="col-md-4 mb-1">
+            <octo-datepicker [disabled]="view"  formControlName="dateofbirth"  [placeholder]="'dd/MM/yyyy'" [min]="min"
+                              [max]="max"
+                              [labelName]="'studentformlabel.dateofbirth'|translate">
+  
+            </octo-datepicker>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <octo-radio-button  formControlName="gender"
+                                [id]="'lblmale'"
+                                [labelName]="'studentformlabel.gender'|translate"
+                                [disabled]="view"
+                                [listdata]="listdata">
+            </octo-radio-button>
+  
+          </div>
+          <div class="col-md-4 mb-1">
+            <octo-checkbox  formControlName="isActive" [disabled]="view" [labelName]="'studentformlabel.isactive'|translate"
+                            [checked]="false">
+            </octo-checkbox>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <octo-button *ngIf="!view" [text]="'general.submit'|translate"
+                          [primary]="true"
+                       
+                          (click)="saveStudent()">
+            </octo-button>
+          </div>
+        </div>
+      </form>
+    </div></div>
+  

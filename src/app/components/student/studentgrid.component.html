@@ -1,0 +1,84 @@
+
+<div class="ms-auto"><a routerLink="/createstudent" class="btn btn-sm btn-outline-success btn-">Create new With NgModel</a>
+<a routerLink="/createstudentwithform" class="btn btn-sm btn-outline-success btn-">Create new With FormControl</a>
+</div>
+      <octo-grid
+       [data]="gridData!"
+      [totalCount]="totalCount"
+      [height]="400"
+      [pageSize]="10"
+      [sortable]="true"
+      [pageable]="true"
+      [filterable]="true"
+      (cellClick)="cellClickHandler($event)"
+      (pageChange)="onPageChange($event)"
+      [rowClass]="getRowClass"
+      (filterChange)="onFilterChange($event)"
+      (selectionChange)="onselectionChange($event)"
+      [selectable]="{checkboxOnly: true}"  
+     >
+      <octo-grid-column [locked]="true"  field="customer_id" title="Action" [width]="80" [columnMenu]="false" class="text-center border-bottom">
+      <ng-template octoGridCellTemplate let-dataItem>
+        <img kendoPopoverAnchor [popover]="topPopover" themeColor="primary"
+        src="../../../assets/images/newimages/frame.svg">
+        </ng-template>
+       
+  </octo-grid-column>
+      <octo-grid-column field="ProductId" [columnMenu]="true"   class="border-bottom"  title="Product Id" [width]="150" format="n2">
+        <ng-template octoGridCellTemplate let-dataItem>
+          <div kendoPopoverAnchor [popover]="topPopover" themeColor="primary">
+            {{ dataItem.ProductId }}
+           </div>
+       </ng-template>  
+      </octo-grid-column>
+      <octo-grid-column field="ProductName" [columnMenu]="true"  title="Product Name" class="border-bottom" [width]="150">
+        <ng-template octoGridCellTemplate let-dataItem>
+          <div kendoPopoverAnchor [popover]="topPopover" themeColor="primary">
+             <span>ProductName:{{ dataItem.ProductName=='Geitost'?'test': dataItem.ProductName}}</span>
+           </div>
+       </ng-template>  
+      </octo-grid-column>
+      <octo-grid-column field="UnitPrice" [columnMenu]="true"  class="border-bottom" title="Price" [width]="150">
+        <ng-template octoGridCellTemplate let-dataItem>
+         <div kendoPopoverAnchor [popover]="topPopover" themeColor="primary">
+            <span>Price: ID:{{ dataItem.UnitPrice }}</span>
+          </div>
+      </ng-template>   
+      </octo-grid-column>
+      <octo-grid-column  class="border-bottom" [columnMenu]="true"  title="Product Date" [width]="150">
+       
+        <ng-template octoGridCellTemplate let-dataItem>
+          <div kendoPopoverAnchor [popover]="topPopover" themeColor="primary">
+            <span>Date:{{ dataItem.ProductIssuieDate| date: 'd/MM/yyyy' }}</span>
+            </div>     
+      </ng-template>
+      </octo-grid-column>
+      <octo-grid-column class="border-bottom" [columnMenu]="true"  field="ProductLocation" title="Product Location" [width]="150">
+        <ng-template octoGridCellTemplate let-dataItem >
+          <div kendoPopoverAnchor [popover]="topPopover"   themeColor="primary">
+            {{dataItem.ProductLocation}}
+          </div>
+        </ng-template>
+      </octo-grid-column>
+      <octo-grid-column class="border-bottom" [columnMenu]="true"  field="ProductDesc" title="Product Desc" [width]="150">
+        <ng-template octoGridCellTemplate let-dataItem >
+          <div kendoPopoverAnchor [popover]="topPopover"   themeColor="primary">
+            {{dataItem.ProductDesc}}
+          </div>
+        </ng-template>
+      </octo-grid-column>
+   
+    </octo-grid>
+  
+      <kendo-popover #topPopover position="top" [width]="150" [height]="50">
+        <ng-template kendoPopoverTitleTemplate>
+      <div class="text-center border-0">
+        <img src="../../../assets/images/newimages/eye.png" (click)="viewData()" class="w-15" alt="Image description">
+        <img src="../../../assets/images/newimages/edit.png" (click)="editData()" class="w-15 ms-2" alt="Edit">
+        <img src="../../../assets/images/newimages/copy.png" (click)="copyData()" class="w-15  ms-2" alt="Copy">
+        <img src="../../../assets/images/newimages/delete_icon.svg" (click)="deleteData()" class="w-15  ms-2" alt="Delete">
+      </div>
+    </ng-template>
+  </kendo-popover>
+ 
+   
